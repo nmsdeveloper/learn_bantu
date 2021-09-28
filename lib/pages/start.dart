@@ -1,13 +1,4 @@
-import 'package:bootstrap_icons/bootstrap_icons.dart';
-import 'package:flutter/animation.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
-import 'package:learn_bantu/pages/home.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:learn_bantu/variables/style.dart';
+import 'package:learn_bantu/exports/start_export.dart';
 
 class StartPage extends StatefulWidget {
   const StartPage({Key? key}) : super(key: key);
@@ -50,10 +41,11 @@ class _StartPageState extends State<StartPage> {
               child: Container(
                 alignment: Alignment.centerRight,
                 child: GestureDetector(
-                  onTap: () => _pageController.animateToPage(
-                    2,
-                    duration: const Duration(milliseconds: 500),
-                    curve: Curves.linear,
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const HomePage(),
+                    ),
                   ),
                   child: Text(
                     "Passer",
@@ -77,22 +69,22 @@ class _StartPageState extends State<StartPage> {
                 }),
                 children: [
                   _buildPage(
-                    asset: "assets/images/board1.svg",
+                    asset: "assets/boards/board1.svg",
                     text:
                         "Bienvenue sur Bantu.\nCette application vous permettra d'apprendre "
                         "le pouvi une langue ethnique du Gabon.",
                     height: _height,
                   ),
                   _buildPage(
-                    asset: "assets/images/board2.svg",
+                    asset: "assets/boards/board2.svg",
                     text: "Notez bien que les mots et "
                         "phrases sont écrits selon phonétique et "
                         "non la grammaire pour une meilleur compréhension.",
                     height: _height,
                   ),
                   _buildPage(
-                    asset: "assets/images/board3.svg",
-                    text: "C'est parti, apprenons le Puvi.",
+                    asset: "assets/boards/board3.svg",
+                    text: "C'est parti, apprenons le Pouvi.",
                     height: _height,
                   ),
                 ],

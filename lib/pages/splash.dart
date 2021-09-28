@@ -1,10 +1,4 @@
-import 'dart:async';
-
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:learn_bantu/pages/start.dart';
-import 'package:learn_bantu/variables/style.dart';
+import 'package:learn_bantu/exports/splash_export.dart';
 
 class SplashLogo extends StatefulWidget {
   const SplashLogo({Key? key}) : super(key: key);
@@ -37,7 +31,10 @@ class _SplashLogoState extends State<SplashLogo> {
       body: Container(
         width: _width,
         height: _height,
-        decoration: bgGradient(),
+        decoration: bgGradient(
+          color1: const Color(0xff36d1dc),
+          color2: const Color(0xff5b86e5),
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,

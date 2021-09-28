@@ -1,0 +1,9 @@
+export 'package:flutter/widgets.dart';
+export 'package:get/get_core/src/get_main.dart';
+export 'package:get/get_navigation/src/extension_navigation.dart';
+export 'package:get/get_rx/src/rx_types/rx_types.dart';
+export 'package:get/get_state_manager/src/rx_flutter/rx_ticket_provider_mixin.dart';
+export 'package:get/get_state_manager/src/simple/get_controllers.dart';
+export 'package:learn_bantu/pages/quiz.dart';
+export 'package:learn_bantu/quiz/score.dart';
+export 'package:learn_bantu/variables/list.dart';

@@ -1,780 +1,969 @@
-/*=============== LISTS NUMBERS ===============*/
-import 'package:flutter/painting.dart';
-
-List<String> imagesNum = [
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "10",
-  "11",
-  "12",
-  "15",
-  "19",
-  "20",
-  "21",
-  "22",
-  "25",
-  "29",
-  "30",
-  "36",
-  "40",
-  "50",
-  "78",
-  "100",
+/*=============== LIST COVER HOME ===============*/
+const List<String> coverHome = [
+  "assets/homes/letter.jpg",
+  "assets/homes/number.jpg",
+  "assets/homes/object.jpg",
+  "assets/homes/aliment.jpg",
+  "assets/homes/animal.jpg",
+  "assets/homes/pronoun.jpg",
+  "assets/homes/conversation.jpg",
+  "assets/homes/hi.jpg",
+  "assets/homes/know.jpg",
 ];
-List tranlateNum = [
+/*=============== LIST COVER HOME ===============*/
+
+/*=============== LIST DETAIL COURSE ===============*/
+const List<String> imageDetail = [
+  "assets/cards/course_read.svg",
+  "assets/cards/course_audio.svg",
+  "assets/cards/example.svg",
+  "assets/cards/quiz.svg",
+];
+/*=============== LIST DETAIL COURSE ===============*/
+
+/*=============== LISTS NUMBERS ===============*/
+const List readNum = [
   {
-    'name': '1',
+    'image': '01',
+    'name': 'Un',
     'translate': 'Mouèta',
   },
   {
-    'name': '2',
+    'image': '02',
+    'name': 'Deux',
     'translate': 'Dibâ',
   },
   {
-    'name': '3',
+    'image': '03',
+    'name': 'Trois',
     'translate': 'Ditatoo',
   },
   {
-    'name': '4',
+    'image': '04',
+    'name': 'Quatre',
     'translate': 'Dinayi',
   },
   {
-    'name': '5',
+    'image': '05',
+    'name': 'Cinq',
     'translate': 'Dinaté',
   },
   {
-    'name': '6',
+    'image': '06',
+    'name': 'Six',
     'translate': 'Moutoba',
   },
   {
-    'name': '7',
+    'image': '07',
+    'name': 'Sept',
     'translate': 'Dinayi ditatoo',
   },
   {
-    'name': '8',
+    'image': '08',
+    'name': 'Huit',
     'translate': 'Dinayi dinayi',
   },
   {
-    'name': '9',
+    'image': '09',
+    'name': 'Neuf',
     'translate': 'Ditané dinayi',
   },
   {
-    'name': '10',
+    'image': '10',
+    'name': 'Dix',
     'translate': 'Dzima',
   },
   {
-    'name': '11',
+    'image': '11',
+    'name': 'Onze',
     'translate': 'Dzima na mouèta',
   },
   {
-    'name': '12',
+    'image': '12',
+    'name': 'Douze',
     'translate': 'Dzima na dibâ',
   },
   {
-    'name': '15',
+    'image': '15',
+    'name': 'Quinze',
     'translate': 'Dzima na dinaté',
   },
   {
-    'name': '19',
+    'image': '19',
+    'name': 'Dix neuf',
     'translate': 'Dzima na dinayi dinayi',
   },
   {
-    'name': '20',
+    'image': '20',
+    'name': 'Vingt',
     'translate': 'Dzima dibâ',
   },
   {
-    'name': '21',
+    'image': '21',
+    'name': 'Vingt un',
     'translate': 'Dzima dibâ na mouèta',
   },
   {
-    'name': '22',
+    'image': '22',
+    'name': 'Vingt deux',
     'translate': 'Dzima dibâ na dibâ',
   },
   {
-    'name': '25',
+    'image': '25',
+    'name': 'Vingt cinq',
     'translate': 'Dzima dibâ na dinaté',
   },
   {
-    'name': '29',
+    'image': '29',
+    'name': 'Vingt neuf',
     'translate': 'Dzima dibâ na ditané dinayi',
   },
   {
-    'name': '30',
+    'image': '30',
+    'name': 'Trente',
     'translate': 'Dzima ditatoo',
   },
   {
-    'name': '36',
+    'image': '36',
+    'name': 'Trente six',
     'translate': 'Dzima ditatoo na moutoba',
   },
   {
-    'name': '40',
+    'image': '40',
+    'name': 'Quarante',
     'translate': 'Dzima dinayi',
   },
   {
-    'name': '50',
+    'image': '50',
+    'name': 'Cinquante',
     'translate': 'Dzima dinaté',
   },
   {
-    'name': '78',
+    'image': '78',
+    'name': 'Soixante dix huit',
     'translate': 'Dzima dinayi ditatoo na dinayi dinayi',
   },
   {
-    'name': '100',
+    'image': '100',
+    'name': 'Cent',
     'translate': 'Dzima Dzima',
   },
-];
-List<String> quesNum = [
-  'Inou ',
-  'A',
-  'Wèni',
-  'Wa',
-  'Mi',
-  'Itou',
-  'Tu (tou)',
-  'O',
-  'Mè',
-  'Nu (nou)',
-  'Wa',
-  'Mèni',
-];
-List repNum = [
-  {
-    'rep1': 'Tu',
-    'rep2': 'Il / Elle',
-    'rep3': 'Vos / Votre',
-  },
-  {
-    'rep1': 'Ils / Elles',
-    'rep2': 'Nous',
-    'rep3': 'Il / Elle',
-  },
-  {
-    'rep1': 'Eux',
-    'rep2': 'Nous',
-    'rep3': 'Toi',
-  },
-  {
-    'rep1': 'Ils / Elles',
-    'rep2': 'Nous',
-    'rep3': 'Vos',
-  },
-  {
-    'rep1': 'Eux',
-    'rep2': 'Je',
-    'rep3': 'Nos',
-  },
-  {
-    'rep1': 'Nos / Notre',
-    'rep2': 'Eux',
-    'rep3': 'Vos / Votre',
-  },
-  {
-    'rep1': 'Nous',
-    'rep2': 'Vous',
-    'rep3': 'Ils / Elles',
-  },
-  {
-    'rep1': 'Vos / Votre',
-    'rep2': 'Je',
-    'rep3': 'Tu',
-  },
-  {
-    'rep1': 'Moi',
-    'rep2': 'Toi',
-    'rep3': 'Mon / Ma',
-  },
-  {
-    'rep1': 'Ils',
-    'rep2': 'Vous',
-    'rep3': 'Vos / Votre',
-  },
-  {
-    'rep1': 'Il / Elle',
-    'rep2': 'Eux',
-    'rep3': 'Ils / Elles',
-  },
-  {
-    'rep1': 'Moi',
-    'rep2': 'Toi',
-    'rep3': 'Notre',
-  },
-];
-List trueNum = [
-  "Vos / Votre",
-  "Il / Elle",
-  "Toi",
-  "Ils / Elles",
-  "Je",
-  "Nos / Notre",
-  "Nous",
-  "Tu",
-  "Mon / Ma",
-  "Vous",
-  "Eux",
-  "Moi",
 ];
 /*=============== LISTS NUMBERS ===============*/
 
 /*=============== LISTS OBJECTS ===============*/
-List<String> imagesObj = [
-  "assets/images/fork.jpg",
-  "assets/images/spoon.jpg",
-  "assets/images/bottle.jpg",
-  "assets/images/plat.jpg",
-  "assets/images/plats.jpg",
-  "assets/images/pot.jpg"
-];
-List tranlateObj = [
+const List readObject = [
   {
+    'image': "assets/objects/fork.jpg",
     'name': 'Fourchette',
     'translate': 'Moutsoumè',
   },
   {
+    'image': "assets/objects/spoon.jpg",
     'name': 'Cuillère',
     'translate': 'Edzombiè',
   },
   {
+    'image': "assets/objects/bottle.jpg",
     'name': 'Bouteille',
     'translate': 'Pamba',
   },
   {
+    'image': "assets/objects/plat.jpg",
     'name': 'Assiette',
     'translate': 'Ghépèlè (répèlè)',
   },
   {
+    'image': "assets/objects/plats.jpg",
     'name': 'Les Assiettes',
     'translate': 'Bipèlè',
   },
   {
+    'image': "assets/objects/pot.jpg",
     'name': 'Marmite',
     'translate': 'Niongoo',
   },
 ];
-List<String> quesObj = [
-  'Bipèlè',
-  'Fourchette',
-  'Niongoo',
-  'Assiette',
-  'Edzombiè',
-  'Moutsoumè',
-  '24 Cuillères',
-  'Pamba',
-  'Cuillère',
-  '5 Bouteilles',
-  'Ghépèlè (répèlè)',
-  '3 Marmites',
-];
-List repObj = [
+const List exampleObject = [
   {
-    'rep1': 'Cuillère',
-    'rep2': 'Fourchette',
-    'rep3': 'Assiettes',
+    'image': 'Avec Moutsoumè',
+    'phrasing': 'Donne-moi la fourchette',
+    'translate': 'Kaba mèni moutsoumè',
   },
   {
-    'rep1': 'Moutsoumè',
-    'rep2': 'Ghépèlè',
-    'rep3': 'Bipèlè',
+    'image': 'Avec Pamba',
+    'phrasing': 'Donne-moi la bouteille d\'eau',
+    'translate': 'Kaba mèni pamba mambamè',
   },
   {
-    'rep1': 'Assiette',
-    'rep2': 'Assiettes',
-    'rep3': 'Marmite',
-  },
-  {
-    'rep1': 'Bipèlè',
-    'rep2': 'Ghépèlè',
-    'rep3': 'Moutsoumè',
-  },
-  {
-    'rep1': 'Cuillère',
-    'rep2': 'Marmite',
-    'rep3': 'Bouteille',
-  },
-  {
-    'rep1': 'Cuillère',
-    'rep2': 'Marmite',
-    'rep3': 'Fourchette',
-  },
-  {
-    'rep1': '24 Edzombiè',
-    'rep2': '24 Moutsoumè',
-    'rep3': '24 Pamba',
-  },
-  {
-    'rep1': 'Assiette',
-    'rep2': 'Bouitelle',
-    'rep3': 'Marmite',
-  },
-  {
-    'rep1': 'Niongoo',
-    'rep2': 'Moutsoumè',
-    'rep3': 'Edzombiè',
-  },
-  {
-    'rep1': '5 Bipèlè',
-    'rep2': '5 Pamba',
-    'rep3': '5 Edzombiè',
-  },
-  {
-    'rep1': 'Assiette',
-    'rep2': 'Boutielles',
-    'rep3': 'Bouitelle',
-  },
-  {
-    'rep1': '3 Ghépèlè',
-    'rep2': '3 Niongoo',
-    'rep3': '3 Pamba',
+    'image': 'Avec Niongoo',
+    'phrasing': 'Va prendre la marmite',
+    'translate': 'Di bongoo niongouè',
   },
 ];
-List trueObj = [
-  "Assiettes",
-  "Moutsoumè",
-  "Marmite",
-  "Ghépèlè",
-  "Cuillère",
-  "Fourchette",
-  "24 Edzombiè",
-  "Bouitelle",
-  "Edzombiè",
-  "5 Pamba",
-  "Assiette",
-  "3 Niongoo",
+const List quizObject = [
+  {
+    'question': 'Comment dire "Ghépèlè (répèlè)" ?',
+    'options': [
+      'Les Assiettes',
+      'Assiette',
+      'Bouteille',
+      'Marmite',
+    ],
+    'answer': 1,
+  },
+  {
+    'question': 'Comment dire "Pamba" ?',
+    'options': [
+      'Marmite',
+      'Bouteille',
+      'Assiette',
+      'Fourchettes',
+    ],
+    'answer': 1,
+  },
+  {
+    'question': 'Comment dire "Bipèlè" ?',
+    'options': [
+      'Les Assiettes',
+      'Marmite',
+      'Fourchette',
+      ' Assiette',
+    ],
+    'answer': 0,
+  },
+  {
+    'question': 'Comment dire "Edzombiè" ?',
+    'options': [
+      'Cuillère',
+      'Bouteille',
+      'MArmite',
+      'Les Assiettes',
+    ],
+    'answer': 0,
+  },
+  {
+    'question': 'Comment dire "Moutsoumè" ?',
+    'options': [
+      'Chaussure',
+      'Marmite',
+      'Cuillère',
+      'Fourchette',
+    ],
+    'answer': 3,
+  },
+  {
+    'question': 'Comment dire "Niongoo" ?',
+    'options': [
+      'Les Assiettes',
+      'Bouteille',
+      'Marmite',
+      'Fourchettes',
+    ],
+    'answer': 2,
+  },
 ];
 /*=============== LISTS OBJECTS ===============*/
 
 /*=============== LISTS ALIMENTS ===============*/
-List<String> imagesAli = [
-  "assets/images/fork.jpg",
-  "assets/images/spoon.jpg",
-  "assets/images/bottle.jpg",
-  "assets/images/plat.jpg",
-  "assets/images/plats.jpg",
-  "assets/images/pot.jpg",
-  "assets/images/fork.jpg",
-  "assets/images/spoon.jpg",
-  "assets/images/bottle.jpg",
-  "assets/images/plat.jpg",
-  "assets/images/plats.jpg",
-  "assets/images/pot.jpg",
-  "assets/images/fork.jpg",
-  "assets/images/spoon.jpg",
-  "assets/images/bottle.jpg",
-  "assets/images/plat.jpg",
-  "assets/images/plats.jpg",
-  "assets/images/pot.jpg",
-  "assets/images/fork.jpg",
-  "assets/images/spoon.jpg",
-  "assets/images/bottle.jpg",
-];
-List tranlateAli = [
+const List readAli = [
   {
+    'image': 'assets/aliments/nourriture.jpg',
     'name': 'La Nourriture',
     'translate': 'Dinongua',
   },
   {
+    'image': 'assets/aliments/faim.jpg',
+    'name': 'La Faim',
+    'translate': 'Idzè',
+  },
+  {
+    'image': 'assets/aliments/feu.jpg',
     'name': 'Le Feu',
     'translate': 'Ikoo',
   },
   {
+    'image': 'assets/aliments/bananeplantin.jpg',
     'name': 'Banane Plantin',
     'translate': 'Tsodi',
   },
   {
+    'image': 'assets/aliments/eau.jpg',
+    'name': 'De l\'eau',
+    'translate': 'Mamba',
+  },
+  {
+    'image': 'assets/aliments/bananedouce.jpg',
     'name': 'Banane Douce',
     'translate': 'Etotoo',
   },
   {
+    'image': 'assets/aliments/bananesdouce.jpg',
     'name': 'Les Bananes Douces',
     'translate': 'Matotoo',
   },
   {
+    'image': 'assets/aliments/manioc.png',
     'name': 'Le Manioc',
     'translate': 'Moupita',
   },
   {
+    'image': 'assets/aliments/maniocs.jpg',
     'name': 'Les Maniocs',
     'translate': 'Mipitamiè',
   },
   {
+    'image': 'assets/aliments/banane.jpg',
     'name': 'La Banane',
     'translate': 'Kondè',
   },
   {
+    'image': 'assets/aliments/bananes.jpg',
     'name': 'Les Bananes',
     'translate': 'Kondèdiè',
   },
   {
+    'image': 'assets/aliments/feuillemanioc.jpg',
     'name': 'La Feuille de Manioc',
     'translate': 'Maraa',
   },
   {
+    'image': 'assets/aliments/feuillesmanioc.jpg',
     'name': 'Les Feuilles de Manioc',
     'translate': 'Maramè',
   },
   {
-    'name': 'Le Poisson',
-    'translate': 'Tsouyi',
-  },
-  {
-    'name': 'Les Poissons',
-    'translate': 'Tsouyidiè',
-  },
-  {
+    'image': 'assets/aliments/viande.jpg',
     'name': 'La Viande',
     'translate': 'Biaka',
   },
   {
+    'image': 'assets/aliments/viandes.jpg',
     'name': 'Les Viandes',
     'translate': 'Biakabiè',
   },
   {
+    'image': 'assets/aliments/riz.jpg',
     'name': 'Le Riz',
     'translate': 'Moulèssouè',
   },
   {
+    'image': 'assets/aliments/tubercule.jpg',
+    'name': 'Tubercule',
+    'translate': 'Erongoo',
+  },
+  {
+    'image': 'assets/aliments/tubercules.jpg',
+    'name': 'Les Tubercules',
+    'translate': 'Birongoo',
+  },
+  {
+    'image': 'assets/aliments/huile.jpg',
     'name': 'L\'Huile',
     'translate': 'Madi',
   },
   {
+    'image': 'assets/aliments/sel.jpg',
     'name': 'Le Sel',
     'translate': 'Kèdoo',
   },
   {
+    'image': 'assets/aliments/sucre.jpg',
     'name': 'Le Sucre',
     'translate': 'Missongomiè',
   },
   {
+    'image': 'assets/aliments/arachide.jpg',
     'name': 'Arachide',
     'translate': 'Pénda',
   },
   {
+    'image': 'assets/aliments/noixpalme.jpg',
     'name': 'Noix de Palme',
     'translate': 'Ngaadi',
   },
-];
-List<String> quesAli = [
-  'Maraa',
-  'Etotoo',
-  'Madi',
-  'Tsodi',
-  'Matotoo',
-  'Ikoo',
-  'Ngaadi',
-  'Kondèdiè',
-  'Missongomiè',
-  'Moupita',
-  'Kondè',
-  'Mipitamiè',
-  'Maramè',
-  'Biaka',
-  'Dinongua',
-  'Tsouyi',
-  'Biakabiè',
-  'Moulèssouè',
-  'Tsouyidiè',
-  'Kèdoo',
-  'Pénda',
-];
-List repAli = [
   {
-    'rep1': 'Nourriture',
-    'rep2': 'Poisson',
-    'rep3': 'La Feuille de Manioc',
+    'image': 'assets/aliments/noixcola.jpg',
+    'name': 'Noix de Cola',
+    'translate': 'Ébedo',
   },
   {
-    'rep1': 'Riz',
-    'rep2': 'Les Poissons',
-    'rep3': 'Banane Douce',
+    'image': 'assets/aliments/citron.jpg',
+    'name': 'Citron',
+    'translate': 'Ghemoni',
   },
   {
-    'rep1': 'L\'Huile',
-    'rep2': 'Les Poissons',
-    'rep3': 'Le Feu',
+    'image': 'assets/aliments/coco.jpg',
+    'name': 'Coco',
+    'translate': 'Ékoko',
   },
   {
-    'rep1': 'Banane Plantin',
-    'rep2': 'Riz',
-    'rep3': 'Viande',
+    'image': 'assets/aliments/atanga.jpg',
+    'name': 'L\'atanga',
+    'translate': 'Essagho',
   },
   {
-    'rep1': 'Le Feu',
-    'rep2': 'Les Viandes',
-    'rep3': 'Les Bananes Douces',
+    'image': 'assets/aliments/atangas.jpg',
+    'name': 'Les Atangas',
+    'translate': 'Massagho',
   },
   {
-    'rep1': 'Le Feu',
-    'rep2': 'Arachide',
-    'rep3': 'Le Sucre',
+    'image': 'assets/aliments/mangue.jpg',
+    'name': 'Mangue',
+    'translate': 'Iba',
   },
   {
-    'rep1': 'Noix de Palme',
-    'rep2': 'Le Feu',
-    'rep3': 'L\'Huile',
+    'image': 'assets/aliments/papaye.jpg',
+    'name': 'Papaye',
+    'translate': 'Élôlô',
   },
   {
-    'rep1': 'Arachide',
-    'rep2': 'Les Bananes',
-    'rep3': 'La Banane',
+    'image': 'assets/aliments/ananas.jpg',
+    'name': 'Ananas',
+    'translate': 'Elanga',
   },
   {
-    'rep1': 'L\'Huile',
-    'rep2': 'Le Sel',
-    'rep3': 'Le Sucre',
+    'image': 'assets/aliments/avocat.jpg',
+    'name': 'Avocat',
+    'translate': 'Ghevoka',
   },
   {
-    'rep1': 'Le Manioc',
-    'rep2': 'La Nourriture',
-    'rep3': 'Les Feuilles de Maniocs',
-  },
-  {
-    'rep1': 'Les Bananes',
-    'rep2': 'La Banane',
-    'rep3': 'Les Viandes',
-  },
-  {
-    'rep1': 'Les Maniocs',
-    'rep2': 'Feuille de Manioc',
-    'rep3': 'Le Riz',
-  },
-  {
-    'rep1': 'Les Feuilles de Manioc',
-    'rep2': 'Le Sel',
-    'rep3': 'Les Viandes',
-  },
-  {
-    'rep1': 'La Viande',
-    'rep2': 'Les Viandes',
-    'rep3': 'Les Poissons',
-  },
-  {
-    'rep1': 'Les Bananes Douces',
-    'rep2': 'La Nourriture',
-    'rep3': 'Poisson',
-  },
-  {
-    'rep1': 'Le Poisson',
-    'rep2': 'Les Poissons',
-    'rep3': 'Les Viandes',
-  },
-  {
-    'rep1': 'Les Viandes',
-    'rep2': 'Le Riz',
-    'rep3': 'Arachide',
-  },
-  {
-    'rep1': 'Le Riz',
-    'rep2': 'Le Sel',
-    'rep3': 'La Nourriture',
-  },
-  {
-    'rep1': 'Les Poissons',
-    'rep2': 'Le Poisson',
-    'rep3': 'Le Sel',
-  },
-  {
-    'rep1': 'Le Sel',
-    'rep2': 'Le Sucre',
-    'rep3': 'L\'Huile',
-  },
-  {
-    'rep1': 'Le Sel',
-    'rep2': 'Le Sucre',
-    'rep3': 'Arachide',
+    'image': 'assets/aliments/raisingab.jpg',
+    'name': 'Raisin du Gabon',
+    'translate': 'Ghémbuta',
   },
 ];
-List trueAli = [
-  "La Feuille de Manioc",
-  "Banane Douce",
-  "L'Huile",
-  "Banane Plantin",
-  "Les Bananes Douces",
-  "Le Feu",
-  "Noix de Palme",
-  "Les Bananes",
-  "Le Sucre",
-  "Le Manioc",
-  "La Banane",
-  "Les Maniocs",
-  "Les Feuilles de Manioc",
-  "La Viande",
-  "La Nourriture",
-  "Le Poisson",
-  "Les Viandes",
-  "Le Riz",
-  "Les Poissons",
-  "Le Sel",
-  "Arachide",
+const List exampleAli = [
+  {
+    'image': 'Avec Moupita',
+    'phrasing': 'Donne-moi le manioc',
+    'translate': 'Kaba mèni moupita',
+  },
+  {
+    'image': 'Avec Missongomiè',
+    'phrasing': 'Va acheter le sucre',
+    'translate': 'Di sombaa missangomiè',
+  },
+  {
+    'image': 'Avec Madi',
+    'phrasing': 'Cherche l\'huile',
+    'translate': 'Bouta madimè',
+  },
+  {
+    'image': 'Avec Kèboo et Dinongua',
+    'phrasing': 'As-t-il mis le sel dans la nourriture ?',
+    'translate': 'A koudiki kèboo ghu(rou) dinongua ?',
+  },
+  {
+    'image': 'Avec Idzè',
+    'phrasing': 'J\'ai faim',
+    'translate': 'Mi idzè',
+  },
+  {
+    'image': 'Avec Mamba et Niongoo',
+    'phrasing': 'Met l\'eau dans la marmite',
+    'translate': 'koudia mamba ghu(rou) niongouè',
+  },
+  {
+    'image': 'Avec Birongoo',
+    'phrasing': 'Nous avons mangés les tubercules hier',
+    'translate': 'Tu éké birongobiè massigha(massira)',
+  },
+  {
+    'image': 'Avec Missongomiè',
+    'phrasing': 'Met le sucre',
+    'translate': 'Koudia missongomiè',
+  },
+];
+const List quizAli = [
+  {
+    'question': 'Comment dire "La viande" ?',
+    'options': [
+      'Biaka',
+      'Biakabiè',
+      'Ngaadi',
+      'Moulèssouè',
+    ],
+    'answer': 0,
+  },
+  {
+    'question': 'Comment dire "de l\'Eau"',
+    'options': [
+      'Elanga',
+      'Ghevoka',
+      'Biakabiè',
+      'Mamba',
+    ],
+    'answer': 3,
+  },
+  {
+    'question': 'Que veut dire "Moulèssouè" ?',
+    'options': [
+      'Les Tubercules',
+      'Maniocs',
+      'Citron',
+      'Le Riz',
+    ],
+    'answer': 3,
+  },
+  {
+    'question': 'Que veut dire "Erongoo" ?',
+    'options': [
+      'Les Tubercules',
+      'Tubercule',
+      'L\'Huile',
+      'Avocat',
+    ],
+    'answer': 1,
+  },
+  {
+    'question': 'Comment dire "La Feuille de Manioc" ?',
+    'options': [
+      'Pénda',
+      'Biaka',
+      'Maraa',
+      'Maramè',
+    ],
+    'answer': 2,
+  },
+  {
+    'question': 'Que veut dire "Birongoo" ?',
+    'options': [
+      'Les Tubercules',
+      'Mangue',
+      'Papaye',
+      'Les Feuilles de Manioc',
+    ],
+    'answer': 0,
+  },
+  {
+    'question': 'Comment dire "La banane" ?',
+    'options': [
+      'Kondèdiè',
+      'Kondè',
+      'Ékoko',
+      'Massagho',
+    ],
+    'answer': 1,
+  },
+  {
+    'question': 'Que veut dire "Élôlô" ?',
+    'options': [
+      'Ananas',
+      'Papaye',
+      'Arachide',
+      'Feu',
+    ],
+    'answer': 1,
+  },
+  {
+    'question': 'Comment dire "Raisin" (du Gabon) en Pouvi ?',
+    'options': [
+      'Massagho',
+      'Ghémbuta',
+      'Ghevoka',
+      'Kèdoo',
+    ],
+    'answer': 1,
+  },
+  {
+    'question': 'Comment dire "Les Maniocs" ?',
+    'options': [
+      'Kondèdiè',
+      'Mipitamiè',
+      'Ébedo',
+      'Maraa',
+    ],
+    'answer': 1,
+  },
+  {
+    'question': 'Que veut dire "Iba" ?',
+    'options': [
+      'Mangue',
+      'Bananes',
+      'Papaye',
+      'Ananas',
+    ],
+    'answer': 0,
+  },
+  {
+    'question': 'Que veut dire "Ngaadi" ?',
+    'options': [
+      'Noix de Palme',
+      'Maniocs',
+      'de l\'Eau',
+      'Noix de Cola',
+    ],
+    'answer': 0,
+  },
+  {
+    'question': 'Comment dire "Coco" ?',
+    'options': [
+      'Iba',
+      'Ghémbuta',
+      'Ékoko',
+      'Elanga',
+    ],
+    'answer': 2,
+  },
+  {
+    'question': 'Comment dire "L\'atanga" ?',
+    'options': [
+      'Essagho',
+      'Elanga',
+      'Massagho',
+      'Ghémbuta',
+    ],
+    'answer': 0,
+  },
+  {
+    'question': 'Comment dire "la nourriture" ?',
+    'options': [
+      'Erongoo',
+      'Tsodi',
+      'Dinongua',
+      'Etotoo',
+    ],
+    'answer': 2,
+  },
+  {
+    'question': 'Comment dire "Les Viandes" ?',
+    'options': [
+      'Birongoo',
+      'Biakabiè',
+      'Tsodi',
+      'Dinongua',
+    ],
+    'answer': 1,
+  },
+  {
+    'question': 'Que veut dire "Pénda" ?',
+    'options': [
+      'Les Bananes',
+      'Arachide',
+      'Noix de Cola',
+      'Noix de Palme',
+    ],
+    'answer': 1,
+  },
+  {
+    'question': 'Que veut dire "Matotoo" ?',
+    'options': [
+      'Raisins',
+      'Les Bananes Douces',
+      'Arachdes',
+      'Atangas',
+    ],
+    'answer': 1,
+  },
+  {
+    'question': 'Que veut dire "Madi" ?',
+    'options': [
+      'Les Atangas',
+      'L\'atanga',
+      'L\'Huile',
+      'Le Sel',
+    ],
+    'answer': 2,
+  },
+  {
+    'question': 'Que veut dire "Moupita" ?',
+    'options': [
+      'Le Manioc',
+      'Nourriture',
+      'Banane Plantin',
+      'Les Maniocs',
+    ],
+    'answer': 0,
+  },
+  {
+    'question': 'Comment dire "Banane Plantin" ?',
+    'options': [
+      'Tsodi',
+      'Iba',
+      'Biaka',
+      'Missongomiè',
+    ],
+    'answer': 0,
+  },
+  {
+    'question': 'Comment dire "Le Sucre" ?',
+    'options': [
+      'Missongomiè',
+      'Madi',
+      'Ghevoka',
+      'Erongoo',
+    ],
+    'answer': 0,
+  },
+  {
+    'question': 'Comment dire "Les Atangas" ?',
+    'options': [
+      'Essangho',
+      'Élôlô',
+      'Elanga',
+      'Massagho',
+    ],
+    'answer': 3,
+  },
+  {
+    'question': 'Que veut dire "Idzè" ?',
+    'options': [
+      'de l\'eau',
+      'Les Maniocs',
+      'La Faim',
+      'l\'Huile',
+    ],
+    'answer': 2,
+  },
+  {
+    'question': 'Que veut dire "Maramè" ?',
+    'options': [
+      'Les Maniocs',
+      'Noix de Cola',
+      'Coco',
+      'Les Feuilles de Manioc',
+    ],
+    'answer': 3,
+  },
+  {
+    'question': 'Que veut dire "Kondèdiè" ?',
+    'options': [
+      'La Feuille de Manioc',
+      'Les Feuilles de Manioc',
+      'Les Bananes',
+      'Le Feu',
+    ],
+    'answer': 2,
+  },
+  {
+    'question': 'Que veut dire "Ghemoni" ?',
+    'options': [
+      'Papaye',
+      'Citron',
+      'Mangue',
+      'Coco',
+    ],
+    'answer': 1,
+  },
+  {
+    'question': 'Comment dire "le Feu" ?',
+    'options': [
+      'Etotoo',
+      'Kèdoo',
+      'Madi',
+      'Ikoo',
+    ],
+    'answer': 3,
+  },
+  {
+    'question': 'Que veut dire "Etotoo" ?',
+    'options': [
+      'Les Bananes Douces',
+      'Le Sel',
+      'Le Riz',
+      'Banane Douce',
+    ],
+    'answer': 3,
+  },
+  {
+    'question': 'Que veut dire "Elanga" ?',
+    'options': [
+      'Mangue',
+      'Riz',
+      'Ananas',
+      'Feuille de Manioc',
+    ],
+    'answer': 2,
+  },
+  {
+    'question': 'Que veut dire "Ghevoka" ?',
+    'options': [
+      'Riz',
+      'Sucre',
+      'Ananas',
+      'Avocat',
+    ],
+    'answer': 3,
+  },
+  {
+    'question': 'Comment dire "Le Sel" ?',
+    'options': [
+      'Ikoo',
+      'Pénda',
+      'Elanga',
+      'Kèdoo',
+    ],
+    'answer': 3,
+  },
+  {
+    'question': 'Comment dire "Noix de Cola" ?',
+    'options': [
+      'Moupita',
+      'Ikoo',
+      'Mamba',
+      'Ébedo',
+    ],
+    'answer': 3,
+  },
 ];
 /*=============== LISTS ALIMENTS ===============*/
 
 /*=============== LISTS PRONOUNS ===============*/
-List<String> imagesPron = [
-  "assets/images/1.jpg",
-  "assets/images/2.jpg",
-  "assets/images/3.jpg",
-  "assets/images/4.jpg",
-  "assets/images/5.jpg",
-  "assets/images/6.jpg",
-  "assets/images/1.jpg",
-  "assets/images/2.jpg",
-  "assets/images/3.jpg",
-  "assets/images/4.jpg",
-  "assets/images/5.jpg",
-  "assets/images/6.jpg",
-];
-List tranlatePron = [
+const List readPron = [
   {
-    'name': 'JE',
+    'image': 'assets/images/pronoun.jpg',
+    'name': 'Je',
     'translate': 'Mi',
   },
   {
+    'image': 'assets/images/pronoun.jpg',
     'name': 'Tu',
     'translate': 'O',
   },
   {
+    'image': 'assets/images/pronoun.jpg',
     'name': 'Il / Elle',
     'translate': 'A',
   },
   {
+    'image': 'assets/images/pronoun.jpg',
     'name': 'Nous',
     'translate': 'Tu (tou)',
   },
   {
+    'image': 'assets/images/pronoun.jpg',
     'name': 'Vous',
     'translate': 'Nu (nou)',
   },
   {
+    'image': 'assets/images/pronoun.jpg',
     'name': 'Ils / Elles',
     'translate': 'Wa',
   },
   {
+    'image': 'assets/images/pronoun.jpg',
     'name': 'Moi',
     'translate': 'Mèni',
   },
   {
+    'image': 'assets/images/pronoun.jpg',
     'name': 'Toi',
     'translate': 'Wèni',
   },
   {
+    'image': 'assets/images/pronoun.jpg',
     'name': 'Mon / Ma',
     'translate': 'Mè',
   },
   {
+    'image': 'assets/images/pronoun.jpg',
     'name': 'Eux',
     'translate': 'Wa',
   },
   {
+    'image': 'assets/images/pronoun.jpg',
     'name': 'Nos / Notre',
     'translate': 'Itou',
   },
   {
+    'image': 'assets/images/pronoun.jpg',
     'name': 'Vos / Votre',
     'translate': 'Inou',
   },
 ];
-List<String> quesPron = [
-  'Inou ',
-  'A',
-  'Wèni',
-  'Wa',
-  'Mi',
-  'Itou',
-  'Tu (tou)',
-  'O',
-  'Mè',
-  'Nu (nou)',
-  'Wa',
-  'Mèni',
-];
-List repPron = [
+const List examplePron = [
   {
-    'rep1': 'Tu',
-    'rep2': 'Il / Elle',
-    'rep3': 'Vos / Votre',
+    'image': 'Avec Mi',
+    'phrasing': 'Je vais au magasin',
+    'translate': 'Mi dioyi ghu(rou) maghassimè',
   },
   {
-    'rep1': 'Ils / Elles',
-    'rep2': 'Nous',
-    'rep3': 'Il / Elle',
+    'image': 'Avec O',
+    'phrasing': 'Tu prends la cuillère ou la fourchette ?',
+    'translate': 'O bongoo edzombiè na moutsoumè ?',
   },
   {
-    'rep1': 'Eux',
-    'rep2': 'Nous',
-    'rep3': 'Toi',
+    'image': 'Avec Wa',
+    'phrasing': 'Ils / Elles partent en voyage',
+    'translate': 'Wa dioyi moudionga',
   },
-  {
-    'rep1': 'Ils / Elles',
-    'rep2': 'Nous',
-    'rep3': 'Vos',
-  },
-  {
-    'rep1': 'Eux',
-    'rep2': 'Je',
-    'rep3': 'Nos',
-  },
-  {
-    'rep1': 'Nos / Notre',
-    'rep2': 'Eux',
-    'rep3': 'Vos / Votre',
-  },
-  {
-    'rep1': 'Nous',
-    'rep2': 'Vous',
-    'rep3': 'Ils / Elles',
-  },
-  {
-    'rep1': 'Vos / Votre',
-    'rep2': 'Je',
-    'rep3': 'Tu',
-  },
-  {
-    'rep1': 'Moi',
-    'rep2': 'Toi',
-    'rep3': 'Mon / Ma',
-  },
-  {
-    'rep1': 'Ils',
-    'rep2': 'Vous',
-    'rep3': 'Vos / Votre',
-  },
-  {
-    'rep1': 'Il / Elle',
-    'rep2': 'Eux',
-    'rep3': 'Ils / Elles',
-  },
-  {
-    'rep1': 'Moi',
-    'rep2': 'Toi',
-    'rep3': 'Notre',
-  },
-];
-List truePron = [
-  "Vos / Votre",
-  "Il / Elle",
-  "Toi",
-  "Ils / Elles",
-  "Je",
-  "Nos / Notre",
-  "Nous",
-  "Tu",
-  "Mon / Ma",
-  "Vous",
-  "Eux",
-  "Moi",
 ];
 /*=============== LISTS PRONOUNS ===============*/
 
-/*=============== LIST COLOR LEARN ===============*/
-List colorCardLearn = [
-  const Color(0xffbbbbbb),
-  const Color(0xffbbbbbb),
-  const Color(0xffbbbbbb),
-];
-/*=============== LIST COLOR LEARN ===============*/
+/*=============== LIST GET TO KNOW ===============*/
+const List getToKnow = [
+  {
+    'phrasing': 'Bonjour',
+    'translate': 'O matoumoura',
+  },
+  {
+    'phrasing': 'Bonjour (reponse)',
+    'translate': 'È noo',
+  },
+  {
+    'phrasing': 'Comment vas-tu ?',
+    'translate': 'Bouédi ?',
+  },
+  {
+    'phrasing': 'Je vais bien',
+    'translate': 'Bouédi ma tsange',
+  },
+  {
+    'phrasing': 'Comment t\'appelles-tu?',
+    'translate': 'Inou indza ? / Weni indza ?',
+  },
+  {
+    'phrasing': 'Je m\'appelle Séverin MOUGHANDZA',
+    'translate': 'Inamè Séverin MOUGHANDZA',
+  },
+  {
+    'phrasing': 'Comment s\'appelle ton père ?',
+    'translate': 'Ina tatou indza ?',
+  },
+  {
+    'phrasing': 'Mon père s\'appelle TATA Pierre',
+    'translate': 'Ina tatamè TATA Pierre / Tatamè TATA Pierre',
+  },
+  {
+    'phrasing': 'Comment s\'appelle ton mère ?',
+    'translate': 'Ina iyou indza ?',
+  },
+  {
+    'phrasing': 'Ma mère s\'appelle Jeanne MASAMEDI',
+    'translate': 'Ina iyamè Jeanne MASAMEDI / Iyamè Jeanne MASAMEDI',
+  },
+  {
+    'phrasing': 'Quel âge as-tu ?',
+    'translate': 'Ondé bissévo biké ?',
+  },
+  {
+    'phrasing': 'J\'ai 11 ans',
+    'translate': 'Mindé bissévobi dzima na mouèta',
+  },
+  {
+    'phrasing': 'Où habites-tu ?',
+    'translate': 'Oka dissa gho (Oka dissa rô) ?',
+  },
+  {
+    'phrasing': 'J\'habite à Akébé',
+    'translate': 'Méka dissa ghu Akébé (Méka dissa rou Akébé)',
+  },
+  {
+    'phrasing': 'Où apprends-tu ?',
+    'translate': 'Oka ika gho (Oka ika rô) ?',
+  },
+  {
+    'phrasing': 'J\'apprends à Sibang',
+    'translate': 'Méka ika ghu Sibang (Méka ika rou Sibang)',
+  },
+  {
+    'phrasing': 'Où travailles-tu ?',
+    'translate': 'Oka diandza gho (Oka diandza rô) ?',
+  },
+  {
+    'phrasing': 'Je travaille à Batipé',
+    'translate': 'Méka diandza ghu Batipé (Méka diandza rou Batipé)',
+  },
+]; 
+/*=============== LIST GET TO KNOW ===============*/

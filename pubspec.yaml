@@ -12,6 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   
+  get: ^4.3.8
+    
   flutter_svg: ^0.22.0
   fluttertoast: ^8.0.8
   google_fonts: ^2.1.0
@@ -33,4 +35,9 @@ flutter:
   uses-material-design: true
 
   assets:
-     - assets/images/
+     - assets/homes/
+     - assets/cards/
+     - assets/boards/
+     - assets/objects/
+     - assets/aliments/
+     - assets/audios/

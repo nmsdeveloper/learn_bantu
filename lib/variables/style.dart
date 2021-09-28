@@ -34,13 +34,78 @@ textGirassol({
       fontSize: size,
     );
 
-bgGradient() => const BoxDecoration(
+bgGradient({
+  required Color color1,
+  required Color color2,
+  height,
+  size,
+}) =>
+    BoxDecoration(
       gradient: LinearGradient(
         colors: [
-          Color(0xff36d1dc),
-          Color(0xff5b86e5),
+          color1,
+          color2,
         ],
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
+      ),
+      borderRadius: size == null
+          ? null
+          : BorderRadius.circular(
+              height / size,
+            ),
+    );
+
+bgBoxShadow({
+  required double height,
+  required Color color,
+  required Color colorBox,
+  size,
+  required double oX,
+  required double oY,
+  required double bR,
+}) =>
+    BoxDecoration(
+      color: color,
+      borderRadius: size == null
+          ? null
+          : BorderRadius.circular(
+              height / size,
+            ),
+      boxShadow: [
+        BoxShadow(
+          offset: Offset(oX, oY),
+          blurRadius: bR,
+          color: colorBox,
+        ),
+      ],
+    );
+
+decoCont({
+  required double height,
+  color,
+  required Color borderColor,
+  required double size,
+}) =>
+    BoxDecoration(
+      border: Border.all(
+        color: borderColor,
+        width: height / 600,
+      ),
+      color: color,
+      borderRadius: BorderRadius.circular(
+        height / size,
+      ),
+    );
+
+contBox({
+  required double height,
+  required Color color,
+  required double size,
+}) =>
+    BoxDecoration(
+      color: color,
+      borderRadius: BorderRadius.circular(
+        height / size,
       ),
     );
